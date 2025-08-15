@@ -426,6 +426,42 @@ h2 {
 /* media queries. Min-width is the mobile first approach. These queries will cause the pages/screen to change once we hit 834px from the smallest screen size, which is 320px*/ 
 @media (min-width: 834px) {
 
+/* Header */
+    .header-menu {
+        position: unset;
+        transform: unset;
+    }
+
+    .header-close, .header-menu-icon {
+        display:none;
+    }
+
+    .header-menu {
+        background-color: unset;
+    }
+
+    .header-menu ul {
+        border-radius: unset;
+        display: flex;
+        gap: 6rem;
+        padding-right: 2rem;
+    }
+
+    .header-menu a {
+        border-bottom: unset;
+        display: inline-block;
+        padding: unset;
+        color: black;
+    }
+
+    .header-wrapper a:hover{
+        color: brown;
+    }
+
+    .header-menu {
+        width: unset;
+    }
+
 /* footer */
     .footer-logo img{
         width: 10rem;
@@ -587,41 +623,6 @@ h2 {
 /* media queries. Min-width is the mobile first approach. These queries will cause the pages/screen to change once we hit 1280px from the smallest screen size, which is 320px*/ 
 @media (min-width: 1280px) {
 
-/* Header */
-    .header-menu {
-        position: unset;
-        transform: unset;
-    }
-
-    .header-close, .header-menu-icon {
-        display:none;
-    }
-
-    .header-menu {
-        background-color: unset;
-    }
-
-    .header-menu ul {
-        border-radius: unset;
-        display: flex;
-        gap: 6rem;
-        padding-right: 2rem;
-    }
-
-    .header-menu a {
-        border-bottom: unset;
-        display: inline-block;
-        padding: unset;
-        color: black;
-    }
-
-    .header-wrapper a:hover{
-        color: brown;
-    }
-
-    .header-menu {
-        width: unset;
-    }
 
 /* footer */
 
