@@ -1,0 +1,1173 @@
+body,html{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+body {
+    /* color: rgb(228, 217, 182); */
+    overflow-x: hidden;
+    max-width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+/* header */
+
+.header-wrapper a:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+.header{
+    padding: 1rem;
+    display:block;
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 2px solid black;
+    padding: 1.5rem;
+}
+
+.header-logo img{
+    width: 10rem;
+    max-width: 100%;
+    padding-left: 0.6rem;
+}
+
+.header-menu {
+    overflow:hidden;
+    z-index: 9999;
+    width: 22.5rem;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.25s ease; 
+}
+
+.header-menu.open {
+    transform: translateX(0);
+}
+
+.header-menu a{
+    color:white;
+    text-decoration: none;
+    display:block;
+    border-bottom: 2px solid white;
+    padding: 1.5rem;
+    font-weight: 500;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+}
+
+.header-menu a {
+    color: white;
+    display: block;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+
+.header-close{
+    font-size: 2.5rem;
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+
+.header-close a {
+    border-bottom: unset;
+    padding: 1rem;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+}
+
+/* footer */
+
+.footer{
+    padding: 1rem;
+    display:block;
+    width: 100%;
+    background-color:black;
+    border: solid 2px white 
+}
+
+.footer-wrapper {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+   
+}
+
+.footer-logo img{
+    width: 10rem;
+    max-width: 100%;
+    align-items: center;
+    padding-left: 0.6rem;
+}
+
+.footer-logo h3{
+    color: white;
+    align-items: center;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-size: 0.80rem;
+    padding: 0;
+    font-weight: 600;
+}
+
+.footer-social {
+    top: 0;
+    right: 0;
+    overflow:hidden;
+
+}
+
+.footer-social h4{
+    color: white;
+    display: flex;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 6rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-social li {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    list-style: none;
+}
+
+
+.footer-social li img {
+  width: 60px;
+  height:auto;
+}
+
+
+.Projects{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(65, 64, 64);
+    padding: 6rem;
+}
+
+.ProjectText {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+}
+.footer-logo img{
+    width: 12rem;
+    max-width: 100%;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.footer-logo h3{
+    color: white;
+    align-items: center;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-size: 0.80rem;
+    padding-left: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-social h4{
+    color: white;
+    display: flex;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding-left: 5.5rem;
+    font-size: 0.80rem;
+}
+
+.footer-social li img {
+  width: 60px;
+  height:auto;
+}
+
+
+
+.ProjectText {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+.item {
+  width: 20rem;
+  text-align: center;
+  aspect-ratio: 1/1;
+  grid-column: 1 / 6; 
+  display: grid;
+}
+
+.project-info{
+    text-align: center;
+    padding: 1rem;
+    grid-column: 1/ span 5; 
+    font-size: 2rem;
+}
+
+.Esuer{
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #31545E;
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-weight:600;
+}
+
+.EsuerButton {
+    background-color: #31545E;
+    font-family: "montserrat", sans-serif;
+    color: #F7F5F2;
+    border-radius: 2rem;
+    border: 2px solid #F7F5F2;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.EsuerButton:hover{
+    background-color: #F7F5F2;
+    font-family: "montserrat", sans-serif;
+    color: #31545E;
+    border-radius: 2rem;
+    border: 2px solid #31545E;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.PixelPlus {
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #a826b4;
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-weight:600;
+}
+
+.ppButton {
+    background-color: #ba04c0;
+    font-family: "montserrat", sans-serif;
+    color: #F7F5F2;
+    border-radius: 2rem;
+    border: 2px solid #F7F5F2;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.ppButton:hover {
+    background-color: #F7F5F2;
+    font-family: "montserrat", sans-serif;
+    color: #ba04c0;
+    border-radius: 2rem;
+    border: 2px solid #ba04c0;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.Doglingo {
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #27092a;
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-weight:600;
+}
+
+.doglingobtn {
+    background-color:#27092a;
+    font-family: "montserrat", sans-serif;
+    color: #F7F5F2;
+    border-radius: 2rem;
+    border: 2px solid #F7F5F2;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.doglingobtn:hover {
+    background-color:#F7F5F2;
+    font-family: "montserrat", sans-serif;
+    color:#27092a;
+    border-radius: 2rem;
+    border: 2px solid #27092a;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.Clarity {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #453F3C;
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-weight:600;
+}
+
+.clarbtn {
+    background-color:#b0c0bc;
+    font-family: "montserrat", sans-serif;
+    color: #F7F5F2;
+    border-radius: 2rem;
+    border: 2px solid #F7F5F2;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.clarbtn:hover {
+    background-color: #F7F5F2;
+    font-family: "montserrat", sans-serif;
+    color: #b0c0bc;
+    border-radius: 2rem;
+    border: 2px solid #b0c0bc;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+
+.bbbInfo{
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #3f51b5;
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-weight:600;
+}
+
+.bbbbtn {
+    background-color: #3f51b5;
+    font-family: "montserrat", sans-serif;
+    color: #F7F5F2;
+    border-radius: 2rem;
+    border: 2px solid #F7F5F2;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.bbbbtn:hover {
+    background-color: #F7F5F2;
+    font-family: "montserrat", sans-serif;
+    color: #3f51b5;
+    border-radius: 2rem;
+    border: 2px solid #3f51b5;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.FatcatInfo {
+    font-size: 1rem;
+    margin-top: 3rem;
+    color: #ffffff;
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-weight:600;
+}
+
+.catbtn{
+    background-color: #ffffff;
+    font-family: "montserrat", sans-serif;
+    color: #E92020;
+    border-radius: 2rem;
+    border: 2px solid #E92020;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.catbtn:hover{
+    background-color: #E92020;
+    font-family: "montserrat", sans-serif;
+    color: #ffffff;
+    border-radius: 2rem;
+    border: 2px solid #ffffff;
+    padding:0.25rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.pixelbg{
+    background-color: #f4cfff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Esuerbg{
+    background-color: #F7F5F2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dog {
+    background-color:#ffefab;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.clar {
+    background-color: #a7a7a9;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.bbb{
+    background-color: #cddc39;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+.cat {
+    background-color: #E92020;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+/* Icon stuff */
+.header-menu-icon {
+    border-radius: 50%;
+    background-color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu-icon a {
+    padding: 1.5rem;
+    color:rgb(255, 255, 255);
+    line-height: 0;
+}
+
+/* Media queries. Min-width is the mobile first approach. These queries will cause the pages/screen to change once we hit 834px from the smallest screen size, which is 320px*/ 
+
+@media (min-width: 834px) {
+
+/* header */
+
+    .header-menu {
+        position: unset;
+        transform: unset;
+    }
+
+    .header-close, .header-menu-icon {
+        display:none;
+    }
+
+    .header-menu {
+        background-color: unset;
+    }
+
+    .header-menu ul {
+        border-radius: unset;
+        display: flex;
+        gap: 6rem;
+        padding-right: 2rem;
+    }
+
+    .header-menu a {
+        border-bottom: unset;
+        display: inline-block;
+        padding: unset;
+        color: black;
+    }
+
+    .header-wrapper a:hover{
+        color: brown;
+    }
+
+    .header-menu {
+        width: unset;
+    }
+
+/* Footer */
+.footer-social h4{
+    color: white;
+    display: flex;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding-left: 0;
+}
+/* Project text*/
+
+    .ProjectText {
+        font-family: "montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 5rem;
+        color: white;
+    }
+
+/* project display */
+
+    .pixelbg{
+        background-color: #f4cfff;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Esuerbg{
+        background-color: #F7F5F2;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dog {
+        background-color:#ffefab;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .clar {
+        background-color: #a7a7a9;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .bbb{
+        background-color: #cddc39;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .cat {
+        background-color: #E92020;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .item {
+    width: 25rem;
+    text-align: center;
+    aspect-ratio: 1/1;
+    grid-column: auto / span 1
+    }
+
+    .project-info{
+        text-align: center;
+        padding: 1rem;
+        grid-column: 4 / span 8;
+    }
+
+    .Esuer{
+        font-size: 1rem;
+        margin-top: 2rem;
+        color: #31545E;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .EsuerButton {
+        background-color: #31545E;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .EsuerButton:hover{
+        background-color: #F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color: #31545E;
+        border-radius: 2rem;
+        border: 2px solid #31545E;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .PixelPlus {
+        font-size: 1rem;
+        margin-top: 4rem;
+        color: #a826b4;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .ppButton {
+        background-color: #ba04c0;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .ppButton:hover {
+        background-color: #F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color: #ba04c0;
+        border-radius: 2rem;
+        border: 2px solid #ba04c0;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .Doglingo {
+        font-size: 1rem;
+        margin-top: 5rem;
+        color: #27092a;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .doglingobtn {
+        background-color:#27092a;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .doglingobtn:hover {
+        background-color:#F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color:#27092a;
+        border-radius: 2rem;
+        border: 2px solid #27092a;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .Clarity {
+        font-size: 1rem;
+        margin-top: 1rem;
+        color: #453F3C;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .clarbtn {
+        background-color:#b0c0bc;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .clarbtn:hover {
+        background-color: #F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color: #b0c0bc;
+        border-radius: 2rem;
+        border: 2px solid #b0c0bc;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .bbbInfo{
+        font-size: 1rem;
+        margin-top: 2rem;
+        color: #3f51b5;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .bbbbtn {
+        background-color: #3f51b5;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .bbbbtn:hover {
+        background-color: #F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color: #3f51b5;
+        border-radius: 2rem;
+        border: 2px solid #3f51b5;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .FatcatInfo {
+        font-size: 1rem;
+        margin-top: 3rem;
+        color: #ffffff;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .catbtn{
+        background-color: #ffffff;
+        font-family: "montserrat", sans-serif;
+        color: #E92020;
+        border-radius: 2rem;
+        border: 2px solid #E92020;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .catbtn:hover{
+        background-color: #E92020;
+        font-family: "montserrat", sans-serif;
+        color: #ffffff;
+        border-radius: 2rem;
+        border: 2px solid #ffffff;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+
+}
+
+/* Media queries. Min-width is the mobile first approach. These queries will cause the pages/screen to change once we hit 1280px from the smallest screen size, which is 320px*/ 
+
+@media (min-width: 1280px) {
+
+/* Header */
+    .header-menu {
+        position: unset;
+        transform: unset;
+    }
+
+    .header-close, .header-menu-icon {
+        display:none;
+    }
+
+    .header-menu {
+        background-color: unset;
+    }
+
+    .header-menu ul {
+        border-radius: unset;
+        display: flex;
+        gap: 6rem;
+        padding-right: 2rem;
+    }
+
+    .header-menu a {
+        border-bottom: unset;
+        display: inline-block;
+        padding: unset;
+        color: black;
+    }
+
+    .header-wrapper a:hover{
+        color: brown;
+    }
+
+    .header-menu {
+        width: unset;
+    }
+
+/* footer */
+    .footer-social h4{
+        color: white;
+        display: flex;
+        list-style: none;
+        font-family: "montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        padding: 0;
+    }
+
+/* Project text */
+    .ProjectText {
+        font-family: "montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 5rem;
+        color: white;
+    }
+
+/* Project Slides */
+    .ProjectCont{
+        padding: 10rem;
+    }
+
+    .pixelbg{
+        background-color: #f4cfff;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Esuerbg{
+        background-color: #F7F5F2;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dog {
+        background-color:#ffefab;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .clar {
+        background-color: #a7a7a9;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .bbb{
+        background-color: #cddc39;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .cat {
+        background-color: #E92020;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .item {
+        width: 30rem;
+        text-align: center;
+        aspect-ratio: 1/1;
+        grid-column: auto / span 1
+    }
+
+    .project-info{
+        text-align: center;
+        padding: 1rem;
+        grid-column: 4 / span 8;
+    }
+
+    .Esuer{
+        font-size: 1.75rem;
+        margin-top: 4.5rem;
+        color: #31545E;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .EsuerButton {
+        background-color: #31545E;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .EsuerButton:hover{
+        background-color: #F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color: #31545E;
+        border-radius: 2rem;
+        border: 2px solid #31545E;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .PixelPlus {
+        font-size: 1.75rem;
+        margin-top: 4rem;
+        color: #a826b4;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .ppButton {
+        background-color: #ba04c0;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .ppButton:hover {
+        background-color: #F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color: #ba04c0;
+        border-radius: 2rem;
+        border: 2px solid #ba04c0;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .Doglingo {
+        font-size: 1.75rem;
+        margin-top: 5rem;
+        color: #27092a;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .doglingobtn {
+        background-color:#27092a;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .doglingobtn:hover {
+        background-color:#F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color:#27092a;
+        border-radius: 2rem;
+        border: 2px solid #27092a;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .Clarity {
+        font-size: 1.75rem;
+        margin-top: 1rem;
+        color: #453F3C;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .clarbtn {
+        background-color:#b0c0bc;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .clarbtn:hover {
+        background-color: #F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color: #b0c0bc;
+        border-radius: 2rem;
+        border: 2px solid #b0c0bc;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .bbbInfo{
+        font-size: 1.75rem;
+        margin-top: 2rem;
+        color: #3f51b5;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .bbbbtn {
+        background-color: #3f51b5;
+        font-family: "montserrat", sans-serif;
+        color: #F7F5F2;
+        border-radius: 2rem;
+        border: 2px solid #F7F5F2;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .bbbbtn:hover {
+        background-color: #F7F5F2;
+        font-family: "montserrat", sans-serif;
+        color: #3f51b5;
+        border-radius: 2rem;
+        border: 2px solid #3f51b5;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .FatcatInfo {
+        font-size: 1.75rem;
+        margin-top: 3rem;
+        color: #ffffff;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .catbtn{
+        background-color: #ffffff;
+        font-family: "montserrat", sans-serif;
+        color: #E92020;
+        border-radius: 2rem;
+        border: 2px solid #E92020;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .catbtn:hover{
+        background-color: #E92020;
+        font-family: "montserrat", sans-serif;
+        color: #ffffff;
+        border-radius: 2rem;
+        border: 2px solid #ffffff;
+        padding:0.25rem;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+
+}
+
+/* Media queries. Min-width is the mobile first approach. These queries will cause the pages/screen to change once we hit 1440px from the smallest screen size, which is 320px*/ 
+
+@media (min-width: 1440px) {
+
+/* Project Slides */
+    .Esuer{
+        font-size: 2rem;
+        margin-top: 7rem;
+        color: #31545E;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+
+    .PixelPlus {
+        font-size: 2rem;
+        margin-top: 8rem;
+        color: #a826b4;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+
+    .Doglingo {
+        font-size: 2rem;
+        margin-top: 8rem;
+        color: #27092a;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .Clarity {
+        font-size: 2rem;
+        margin-top: 7rem;
+        color: #453F3C;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+
+    .bbbInfo{
+        font-size: 2rem;
+        margin-top: 6rem;
+        color: #3f51b5;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+
+    .FatcatInfo {
+        font-size: 2rem;
+        margin-top: 7rem;
+        color: #ffffff;
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-weight:600;
+    }
+}
