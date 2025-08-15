@@ -1,0 +1,1156 @@
+body,html{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+/* header */
+
+.header-wrapper a:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+.header{
+    padding: 1rem;
+    display:block;
+    width: 100%;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 2px solid black;
+    padding: 1.5rem;
+}
+
+.header-logo img{
+    width: 10rem;
+    max-width: 100%;
+    padding-left: 0.6rem;
+}
+
+.header-menu {
+    overflow:hidden;
+    z-index: 9999;
+    width: 22.5rem;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.25s ease; 
+}
+
+.header-menu.open {
+    transform: translateX(0);
+}
+
+.header-menu a{
+    color:white;
+    text-decoration: none;
+    display:block;
+    border-bottom: 2px solid white;
+    padding: 1.5rem;
+    font-weight: 500;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+}
+
+.header-menu a {
+    color: white;
+    display: block;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+
+.header-close{
+    font-size: 2.5rem;
+    position: absolute;
+    right: 0;
+    padding: 0;
+}
+
+.header-close a {
+    border-bottom: unset;
+    padding: 1rem;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+}
+
+
+/* footer */
+.footer{
+    padding: 1rem;
+    display:block;
+    width: 100%;
+    background-color:black;
+    border: 2px solid white;
+}
+
+.footer-wrapper {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+   
+}
+
+.footer-logo img{
+    width: 10rem;
+    max-width: 100%;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.footer-logo h3{
+    color: white;
+    align-items: center;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 2rem;
+    font-weight: 600;
+}
+
+.footer-social {
+    top: 0;
+    right: 0;
+    overflow:hidden;
+
+}
+
+.footer-social h4{
+    color: white;
+    display: flex;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    padding-left: 5.5rem;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 5rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-social li {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    list-style: none;
+}
+
+
+.footer-social li img {
+  width: 60px;
+  height:auto;
+}
+
+/* About header */
+.about{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(170, 168, 168);
+}
+
+.about h1 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.about-me .grid {
+    background-color: rgb(65, 64, 64)
+}
+    
+.about-me-content{
+    grid-column: 3 / span 8;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(184, 184, 184, 0.9) 0%, rgba(128, 128, 128, 0.9) 100%); 
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: white;
+    height: 40rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.about-me-content img {
+    margin: auto;
+    width: 100%;
+}
+
+.About-me-image img{
+    justify-content: center;
+}
+
+.about-content {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    grid-column: 7 / span 8;
+    margin: auto;
+    width: 100%;
+
+}
+
+.about-content p {
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+
+/* Education header */
+
+.education{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background-color: rgb(170, 168, 168);
+}
+
+.education h1 {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* About me (ubc) */
+
+.ubc-content{
+    grid-column: 3 / span 8;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(191, 201, 255, 0.9) 100%); 
+    border-radius: 10px;
+    padding: 2rem;
+    color: white;
+    height: 50rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.ubc-content img {
+    margin: auto;
+    width: 100%;
+}
+
+.about-me-ubc img{
+    justify-content: center;
+}
+
+.about-title-ubc{
+    text-align: center;
+    color: white;
+    font-family: "montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.about-title-ubc h2{
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about-content-ubc {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    grid-column: 7 / span 8;
+    margin: auto;
+    width: 100%;
+
+}
+
+.about-content-ubc p {
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-size: 0.80rem;
+}
+
+.about-content-ubc a {
+    max-width: 100%;
+    font-family: "montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 0.80rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    width: 10rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.button:hover{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    width: 10rem;
+}
+
+
+.About-me-image-ubc{
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1rem 0;
+    grid-column: auto / span 6;
+
+}
+
+.About-me-image-ubc img{
+    width: 37rem;
+    height: auto;
+    display: block;
+}
+
+
+/* About me bcit*/
+
+
+.BCIT-content{
+    grid-column: 3 / span 8;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0, 15, 65, 0.9) 0%, rgba(5, 6, 10, 0.9) 100%); 
+    border-radius: 10px;
+    padding: 2rem;
+    color: white;
+    height: 60rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.BCIT-content img {
+    margin: auto;
+    width: 100%;
+}
+
+
+.about-title-bcit{
+    text-align: center;
+    color: white;
+    font-family: "montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.about-title-bcit h2{
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about-content-bcit {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    grid-column: 7 / span 8;
+    margin: auto;
+    width: 100%;
+
+}
+
+.about-content-bcit p {
+    font-family: "montserrat", sans-serif;
+    padding: 1rem;
+    font-size: 0.80rem;
+}
+
+.about-content-bcit a {
+    max-width: 100%;
+    font-family: "montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 0.80rem;
+}
+
+.bcit-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    width: 10rem;
+}
+
+.bcit-button:hover{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    width: 10rem;
+}
+
+.About-me-image-bcit{
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    padding: 3rem 0;
+    grid-column: auto / span 6;
+
+}
+
+.About-me-image-bcit img{
+    width: 37rem;
+    height: auto;
+    display: block;
+}
+
+
+/* Skills */
+
+.skills{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  max-width: 600px;
+  position: relative;
+  perspective: 500px;
+  margin: auto;
+  width: 100%;
+  margin-top: 125px;
+  aspect-ratio: 1/1;
+}
+
+.slider:after {
+  position: absolute;
+  content: "";
+  top: -1rem;
+  bottom: -1rem;
+  right: -1rem;
+  left: -1rem;
+  outline: 1.5px dashed var(--light);
+  border-radius: 10px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  position: absolute;
+  top: 0;
+  left: 0;  
+  backface-visibility: hidden;
+}
+
+.panel {
+  height: 10vh;
+}
+
+.spacer {
+  height: 5vh;
+}
+
+.space-bottom{
+      height: 5vh;
+}
+
+.Figma{
+    background-image: url(/images/Figma.png);
+    background-size: cover;
+    background-position: center;
+}
+.AdobePS{
+  background-image: url(/images/PS.png);
+  background-color: rgb(14, 8, 46);
+  background-size: cover;
+  background-position: center;
+}
+.AdobeIll{
+  background-image: url(/images/Illustrator.png);
+  background-color: rgb(60, 36, 12);
+  background-size: cover;
+  background-position: center;
+}
+.Abobein{
+  background-image: url(/images/Indesign.png);
+  background-color: rgb(86, 47, 68);
+  background-size: cover;
+  background-position: center;
+}
+.AdobePre{
+  background-image: url(/images/Preimere.png);
+  background-color: rgb(4, 4, 93);
+  background-size: cover;
+  background-position: center;
+}
+.visualstu {
+  background-image: url(/images/visualstudio.png);
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+}
+
+.wordpress {
+  background-image: url(/images/Wordpress.png);
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Icon stuff */
+.header-menu-icon {
+    border-radius: 50%;
+    background-color: black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu-icon a {
+    padding: 1.5rem;
+    color:rgb(255, 255, 255);
+    line-height: 0;
+}
+
+
+/* Media queries. Min-width is the mobile first approach. These queries will cause the pages/screen to change once we hit 834px from the smallest screen size, which is 320px*/
+@media (min-width: 834px) {
+
+/* Header */
+    .header-menu {
+        position: unset;
+        transform: unset;
+    }
+
+    .header-close, .header-menu-icon {
+        display:none;
+    }
+
+    .header-menu {
+        background-color: unset;
+    }
+
+    .header-menu ul {
+        border-radius: unset;
+        display: flex;
+        gap: 6rem;
+        padding-right: 2rem;
+    }
+
+    .header-menu a {
+        border-bottom: unset;
+        display: inline-block;
+        padding: unset;
+        color: black;
+    }
+
+    .header-wrapper a:hover{
+        color: brown;
+    }
+
+    .header-menu {
+        width: unset;
+    }
+
+
+/* footer */
+
+    .footer-logo img{
+        width: 10rem;
+        max-width: 100%;
+        align-items: center;
+        padding-left: 5rem;
+    }
+
+    .footer-logo h3{
+        color: white;
+        align-items: center;
+        font-family: "montserrat", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+        padding: 2rem;
+        font-weight: 600;
+    }
+
+    .footer-social {
+        top: 0;
+        right: 0;
+        overflow:hidden;
+
+    }
+
+    .footer-social h4{
+        color: white;
+        display: flex;
+        list-style: none;
+        font-family: "montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        padding: 0
+    }
+
+    .footer-social ul {
+        display: flex;
+        gap: 5rem;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .footer-social li {
+        display: flex;
+        gap: 1.5rem;
+        padding-top: 1.5rem;
+        list-style: none;
+    }
+
+
+    .footer-social li img {
+    width: 60px;
+    height:auto;
+    }
+
+/* About header */
+    .about{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        background-color: rgb(170, 168, 168);
+    }
+
+    .about h1 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .about-me .grid {
+        background-color: rgb(65, 64, 64)
+    }
+        
+    .about-me-content{
+        grid-column: 3 / span 8;
+        text-align: center;
+        background: linear-gradient(90deg, rgba(184, 184, 184, 0.9) 0%, rgba(128, 128, 128, 0.9) 100%); 
+        border-radius: 10px;
+        padding: 2rem;
+        color: white;
+        height: 40rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        position: relative;
+    }
+
+    .about-me-content img {
+        margin: auto;
+        width: 60%;
+    }
+
+    .About-me-image img{
+        justify-content: center;
+    }
+
+    .about-content {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 1rem;
+        grid-column: 7 / span 8;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .about-content p {
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+
+
+/* Education header */
+
+    .education{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        background-color: rgb(170, 168, 168);
+    }
+
+    .education h1 {
+        font-family: "montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+/* About me (ubc) */
+
+    .ubc-content{
+        grid-column: 3 / span 8;
+        text-align: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(191, 201, 255, 0.9) 100%); 
+        border-radius: 10px;
+        padding: 2rem;
+        color: white;
+        height: 50rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        position: relative;
+    }
+
+    .ubc-content img {
+        margin: auto;
+        width: 100%;
+    }
+
+    .about-me-ubc img{
+        justify-content: center;
+    }
+
+    .about-title-ubc{
+        text-align: center;
+        color: white;
+        font-family: "montserrat", sans-serif;
+        font-weight: 800;
+    }
+
+    .about-title-ubc h2{
+        padding-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .about-content-ubc {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+        grid-column: 7 / span 8;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .about-content-ubc p {
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-size: 0.80rem;
+    }
+
+    .about-content-ubc a {
+        max-width: 100%;
+        font-family: "montserrat", sans-serif;
+        text-decoration: none;
+        font-size: 0.80rem;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: rgb(0, 0, 0);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        width: 10rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .button:hover{
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: rgb(0, 0, 0);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(0, 0, 0);
+        width: 10rem;
+    }
+
+
+    .About-me-image-ubc{
+        height: auto;
+        margin: 0 auto;
+        align-items: center;
+        padding: 1rem 0;
+        grid-column: auto / span 6;
+
+    }
+
+    .About-me-image-ubc img{
+        width: 37rem;
+        height: auto;
+        display: block;
+    }
+
+
+/* About me bcit*/
+
+    .BCIT-content{
+        grid-column: 3 / span 8;
+        text-align: center;
+        background: linear-gradient(90deg, rgba(0, 15, 65, 0.9) 0%, rgba(5, 6, 10, 0.9) 100%); 
+        border-radius: 10px;
+        padding: 2rem;
+        color: white;
+        height: 60rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        position: relative;
+    }
+
+    .BCIT-content img {
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .about-title-bcit{
+        text-align: center;
+        color: white;
+        font-family: "montserrat", sans-serif;
+        font-weight: 800;
+    }
+
+    .about-title-bcit h2{
+        padding-top: 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .about-content-bcit {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 1rem;
+        grid-column: 7 / span 8;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .about-content-bcit p {
+        font-family: "montserrat", sans-serif;
+        padding: 1rem;
+        font-size: 0.80rem;
+    }
+
+    .about-content-bcit a {
+        max-width: 100%;
+        font-family: "montserrat", sans-serif;
+        text-decoration: none;
+        font-size: 0.80rem;
+    }
+
+    .bcit-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: rgb(0, 0, 0);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        width: 10rem;
+    }
+
+    .bcit-button:hover{
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(0, 0, 0);
+        width: 10rem;
+    }
+
+    .About-me-image-bcit{
+        height: auto;
+        margin: 0 auto;
+        align-items: center;
+        padding: 3rem 0;
+        grid-column: auto / span 6;
+
+    }
+
+    .About-me-image-bcit img{
+        width: 30rem;
+        height: auto;
+        display: block;
+    }
+
+}
+
+/* Media queries. Min-width is the mobile first approach. These queries will cause the pages/screen to change once we hit 1280px from the smallest screen size, which is 320px*/
+@media (min-width: 1280px) {
+
+/* Header */
+    .header-menu {
+        position: unset;
+        transform: unset;
+    }
+
+    .header-close, .header-menu-icon {
+        display:none;
+    }
+
+    .header-menu {
+        background-color: unset;
+    }
+
+    .header-menu ul {
+        border-radius: unset;
+        display: flex;
+        gap: 6rem;
+        padding-right: 2rem;
+    }
+
+    .header-menu a {
+        border-bottom: unset;
+        display: inline-block;
+        padding: unset;
+        color: black;
+    }
+
+    .header-wrapper a:hover{
+        color: brown;
+    }
+
+    .header-menu {
+        width: unset;
+    }
+
+/* Footer */
+
+    .footer-social h4{
+        color: white;
+        display: flex;
+        list-style: none;
+        font-family: "montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        padding: 0;
+    }
+
+/* About */
+    .about h1 {
+            font-size: 1rem;
+    }
+
+    .education h1 {
+            font-size: 1rem;
+    }
+
+    .About-me-image img {
+            width:  15rem;
+            justify-content: center;
+    }
+
+    .About-me-image-ubc img {
+            width:  10rem;
+            justify-content: center;
+    }
+
+    .About-me-image-bcit img {
+            width:  10rem;
+            justify-content: center;
+    }
+
+    .about-content p {
+            font-family: "montserrat", sans-serif;
+            font-size: 1.25rem;
+    }
+
+    .about-content-ubc p {
+            font-family: "montserrat", sans-serif;
+            padding: 1rem;
+            font-size: 1.25rem;
+    }
+
+    .about-content-bcit p {
+            font-family: "montserrat", sans-serif;
+            padding: 1rem;
+            font-size: 1.25rem;
+    }
+
+
+    .about-content {
+        text-align: center;
+        color: white;
+        padding: 1rem;
+        grid-column: auto / span 12;
+
+    }
+
+    .about-content-ubc {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+        grid-column: auto / span 12;
+
+    }
+
+    .about-content-bcit {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 1rem;
+        grid-column: auto / span 12;
+
+    }
+
+
+    .button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: white;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+        width: 10rem;
+    }
+
+    .bcit-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: rgb(0, 0, 0);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        width: 10rem;
+    }
+
+    .bcit-button:hover{
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(0, 0, 0);
+        width: 10rem;
+    }
+
+    .About-me-image{
+        height: auto;
+        margin: 0 auto;
+        align-items: center;
+        padding: 1rem 0;
+        grid-column: 2 / span 10;
+
+    }
+
+    .About-me-image-ubc{
+        height: auto;
+        margin: 0 auto;
+        align-items: center;
+        padding: 1rem 0;
+        grid-column: 2 / span 10;
+
+    }
+        
+    .About-me-image-bcit{
+        height: auto;
+        margin: 0 auto;
+        align-items: center;
+        padding: 1rem 0;
+        grid-column: 2 / span 10;
+
+    }
+
+    .About-me-image img{
+        height: auto;
+        display: block;
+    }   
+
+    .About-me-image-ubc img{
+        height: auto;
+        display: block;
+    }   
+
+    .About-me-image-bcit img{
+        height: auto;
+        display: block;
+    }   
+
+    .ubc-content{
+        grid-column: 3 / span 8;
+        text-align: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(191, 201, 255, 0.9) 100%); 
+        border-radius: 10px;
+        padding: 4rem;
+        color: white;
+        height: 35rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .BCIT-content{
+        grid-column: 3 / span 8;
+        text-align: center;
+        background: linear-gradient(90deg, rgba(0, 15, 65, 0.9) 0%, rgba(5, 6, 10, 0.9) 100%); 
+        border-radius: 10px;
+        padding: 4rem;
+        color: white;
+        height: 35rem;
+        margin-top: 5rem;
+    }
+
+}
