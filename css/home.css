@@ -539,6 +539,7 @@ h2 {
     .banner-cta a {
         text-decoration: none;
         color: white;
+         padding-bottom: 1.5rem;
     }
 
     .banner-cta a:hover{
