@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css//home.css">
+    <link rel="stylesheet" href="css//reset.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lbe2lwg.css">
+    <link rel="icon" href="/images/HsuLogo.png">
+
+    <!-- Add Background Video CSS -->
+    <link rel="stylesheet" href="./css/bg-video/jquery.background-video.css">
+
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="/flickity/flickity.min.css">
+
+</head>
+<body>
+   <header class="Header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                     <a href="home.html"><img src="/images/HsuLogo.png" alt="site logo"></a>
+                </div>
+                <div class=header-menu-icon>
+                    <a href="#" class="js-menu-open"><ion-icon name="menu"></ion-icon></a>
+                </div>
+                <nav class="header-menu js-menu" data-open="0"> 
+                    <ul class="">
+                        <li class="header-close"><a href="#" class="js-menu-close"><ion-icon name="close"></ion-icon></a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="banner" id="intro">
+        <div class="jquery-background-video-wrapper">
+                <!-- Add jQuery Background Video HTML Elements-->
+                <video class="banner-video jquery-background-video" loop="true" autoplay muted playsinline poster="./images/bgimage.png">
+                    <source src="./images/BannerVideo.mp4" type="video/mp4">
+                </video>
+                <div class="banner-content">
+                    <div class="container grid">
+                        <div class="banner-content-box">
+                            <h1><strong>Alston Hsu</strong></h1>
+                            <p>|UI/UX|Designer|Videography</p>
+                        </div>
+                    </div>
+                    <div class="container grid">
+                        <div class="banner-cta">
+                             <a href="project.html">Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me">
+         <div class="container">
+            <div class="grid">
+                <div class="about-title">
+                    <h2>About Me</h2>
+                </div>
+                 <div class="About-me-image">
+                    <img src="/images/Alston.png" alt="Picture of Alston">
+                </div>
+                <div class="about-content">
+                    <p>Hi, My name is Alston Hsu and I am currently a student in BCIT's New Media and Web development program. I am currently in my 2 term of the program and starting to find out what I am really passionate about.Click the button down below if you would like to learn more information!</p>
+                     <a href="about.html" class="button">About</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div>
+                <p>Projects</p>
+            </div>
+            <div class="carousel">
+                <a href="project.html"><img src="/images/PixelPlus.png" alt="PixelPlus"></a>
+                <a href="project.html"><img src="/images/Esuer.png" alt="Esuer"></a>
+                <a href="project.html"><img src="/images/FatCat.png" alt="FatCat"></a>
+                <a href="project.html"><img src="/images/Doglingo.png" alt="Doglingo"></a>
+                <a href="project.html"><img src="/images/Clarity.png" alt="Clarity"></a>
+                <a href="project.html"><img src="/images/BitesBrewsBeats.png" alt="Food catering company"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-logo">
+                    <img src="/images/HsuLogoWhite.png" alt="site
+                     logo">
+                    <h3><em>Pushing Pixels with Purpose</em></h3>
+                </div>
+                <div class="footer-social">
+                    <h4>Socials</h4>
+                    <ul>
+                        <li><a href=""><img src="images/Instagram.svg" alt="Instagram icon by Icons8"></a></li>
+                        <li><a href=""><img src="images/Facebook.svg" alt="Facebook icon by Icons8"></a></li>
+                        <li><a href="https://www.linkedin.com/in/alston-hsu88/" target="_blank"><img src="images/Linkedin.svg" alt="LinkedIn icon by Icons8"></a></li>
+                    </ul>
+                </div>
+                  
+            </div>
+        </div>
+    </footer>
+
+            
+<!-- Icon -->
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+<!-- jQuery. This must be added first, or the other jQuery plugin will not work-->
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- jQuery Background Video -->
+<script src="./js/bg-video/jquery.background-video.js"></script>
+
+<!-- Flickity JS. This is the CDN that link directly to Flickity files on unpkg -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- Home js -->
+<script src="/JS/Home.js"></script>
+  
+</body>
+</html>
